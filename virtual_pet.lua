@@ -1,4 +1,5 @@
--- PetLife.lua
+#!/usr/bin/env lua
+
 -- Virtual Pet Simulator with JSON Saving
 
 math.randomseed(os.time())
