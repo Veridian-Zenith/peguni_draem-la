@@ -5,9 +5,6 @@ A Text-Based Virtual Pet Simulator
 > “Peguni Draem'la” means “Whispered Companion” in the constructed language Vaesktöng.
 Build a bond with your digital pet, nurture it, and explore your world — all from your terminal.
 
-
-
-
 ---
 
 🌟 Game Features
@@ -39,16 +36,14 @@ Progress saved automatically to pet_data.json
 
 Resume your journey anytime exactly where you left off
 
-
-
 ---
 
 🚀 How to Play
-
+```bash
 git clone git@github.com:Veridian-Zenith/peguni_draem-la.git
 cd peguni_draem-la
 lua virtual_pet.lua
-
+```
 
 ---
 
@@ -56,14 +51,12 @@ lua virtual_pet.lua
 
 Vaesktöng is a conlang I created for fun and worldbuilding. It adds a unique, mystical flavor to the game’s atmosphere.
 
-Phrase	Pronunciation	Meaning
+Phrase  Pronunciation  Meaning
 
-Und I vaelta?	und ee vay-tah?	Where did it go?
-Das verger rog.	das ver-geh roch	Now it’s gone.
-Peguni vet stör?	peh-goo-nee veht shtur?	Did you notice?
-Noka draem tu noth?	no-kah draym too noth	Has the silence gone or been replaced?
-
-
+Und I vaelta?  und ee vay-tah?  Where did it go?
+Das verger rog.  das ver-geh roch  Now it’s gone.
+Peguni vet stör?  peh-goo-nee veht shtur?  Did you notice?
+Noka draem tu noth?  no-kah draym too noth  Has the silence gone or been replaced?
 
 ---
 
@@ -88,6 +81,5 @@ Start et nytt liv med din digitale følgesvenn og bygg et sterkt bånd, alt gjen
 
 Peguni Draem'la: 가상 펫 시뮬레이터
 Vaesktöng 언어로 **"속삭이는 동반자"**를 의미합니다. 명령줄에서 나만의 펫을 키우고 세상을 탐험하세요.
-
 
 ---
