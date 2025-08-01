@@ -1,42 +1,22 @@
-name: Release
+name: Create Release
 
 on:
   push:
     tags:
-      - 'v*'  # Only tags starting with v (like v1.0.0)
+      - 'v*'  # Triggers on tags like v1.0.0, v2.3.4, etc.
+
+permissions:
+  contents: write  # Needed to create a release
 
 jobs:
-  build-and-release:
+  release:
     runs-on: ubuntu-latest
 
-    permissions:
-      contents: write  # Needed to create release and upload files
-
     steps:
-      - name: Checkout source
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Set up release variables
-        id: vars
-        run: |
-          TAG_NAME=${GITHUB_REF#refs/tags/}
-          echo "tag=$TAG_NAME" >> $GITHUB_OUTPUT
-          echo "release_name=peguni_draemla-$TAG_NAME" >> $GITHUB_OUTPUT
-
-      - name: Create tar.gz package
-        run: |
-          mkdir -p dist/${{ steps.vars.outputs.release_name }}
-          cp virtual_pet.lua pet_data.json README.md dist/${{ steps.vars.outputs.release_name }}/
-          tar -czvf ${{ steps.vars.outputs.release_name }}.tar.gz -C dist ${{ steps.vars.outputs.release_name }}
-          sha256sum ${{ steps.vars.outputs.release_name }}.tar.gz > ${{ steps.vars.outputs.release_name }}.sha256
-
       - name: Create GitHub Release
-        uses: softprops/action-gh-release@v1
+        uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ steps.vars.outputs.tag }}
-          name: Release ${{ steps.vars.outputs.tag }}
-          files: |
-            ${{ steps.vars.outputs.release_name }}.tar.gz
-            ${{ steps.vars.outputs.release_name }}.sha256
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          tag_name: ${{ github.ref_name }}
