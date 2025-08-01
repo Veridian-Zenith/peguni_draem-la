@@ -2,8 +2,8 @@
 
 A Text-Based Virtual Pet Simulator
 
-> "Peguni Draem'la" means "Whispered Companion" in the conlang Vaesktöng.
-Form a bond with your digital pet, care for it, and explore your world—all through your terminal.
+> “Peguni Draem'la” means “Whispered Companion” in the constructed language Vaesktöng.
+Build a bond with your digital pet, nurture it, and explore your world — all from your terminal.
 
 
 
@@ -14,46 +14,54 @@ Form a bond with your digital pet, care for it, and explore your world—all thr
 
 🧑‍🎨 Personalization
 
-Define your name, pet's name, species, and home location
+Choose your name, your pet’s name, species, and home location
 
-Fully customizable experience to reflect your style
+A fully customizable, personal experience
 
 
 🐶 Pet Care
 
-Feed, play, and groom your pet
+Feed, play with, and groom your pet
 
-Take walks and train them to grow stronger and happier
+Take walks and train to help it grow stronger and happier
 
 
 🌍 Dynamic World
 
-Your choices impact hunger, happiness, health, and even your own energy
+Your choices affect hunger, happiness, health — even your own energy
 
-Nurture your pet—or face the consequences
+Care for your pet wisely, or face the consequences
 
 
 💾 Persistent Progress
 
 Progress saved automatically to pet_data.json
 
-Pick up your journey right where you left off
+Resume your journey anytime exactly where you left off
 
 
 
 ---
 
-🌐 About the Vaesktöng Language
+🚀 How to Play
 
-Vaesktöng is a constructed language (conlang) I created for fun and worldbuilding.
-It adds a mystical, personal flavor to the experience. Here are some sample phrases:
+git clone git@github.com:Veridian-Zenith/peguni_draem-la.git
+cd peguni_draem-la
+lua virtual_pet.lua
 
-Phrase	Pronunciation	Translation
+
+---
+
+🌐 About Vaesktöng
+
+Vaesktöng is a conlang I created for fun and worldbuilding. It adds a unique, mystical flavor to the game’s atmosphere.
+
+Phrase	Pronunciation	Meaning
 
 Und I vaelta?	und ee vay-tah?	Where did it go?
-Das verger rog.	das ver-geh roch	Now it's gone.
+Das verger rog.	das ver-geh roch	Now it’s gone.
 Peguni vet stör?	peh-goo-nee veht shtur?	Did you notice?
-Noka draem tu noth?	no-kah draym too noth	Has the silence gone, or been replaced?
+Noka draem tu noth?	no-kah draym too noth	Has the silence gone or been replaced?
 
 
 
