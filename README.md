@@ -5,6 +5,10 @@ A Text-Based Virtual Pet Simulator
 > “Peguni Draem'la” means “Whispered Companion” in the constructed language Vaesktöng.
 Build a bond with your digital pet, nurture it, and explore your world — all from your terminal.
 
+📜 **License**
+
+This project is released under the [0BSD](https://opensource.org/licenses/0BSD) license. See [LICENSE](LICENSE) for details.
+
 ---
 
 🌟 Game Features
@@ -12,6 +16,8 @@ Build a bond with your digital pet, nurture it, and explore your world — all f
 🧑‍🎨 Personalization
 
 Choose your name, your pet’s name, species, and home location
+
+Play in English, German, Russian, Norwegian, Korean **or even Vaesktöng** – our custom constructed language.
 
 A fully customizable, personal experience
 
@@ -32,7 +38,7 @@ Care for your pet wisely, or face the consequences
 
 💾 Persistent Progress
 
-Progress saved automatically to pet_data.json
+Progress saved automatically to `pet_data.json` (the filename is defined by the `SAVE_FILE` constant in the script)
 
 Resume your journey anytime exactly where you left off
 
@@ -43,6 +49,9 @@ Resume your journey anytime exactly where you left off
 git clone git@github.com:Veridian-Zenith/peguni_draem-la.git
 cd peguni_draem-la
 lua virtual_pet.lua
+
+# when prompted for language, choose '6' to play in Vaesktöng;
+# the game will sprinkle conlang phrases as you go!
 ```
 
 ---
@@ -51,12 +60,16 @@ lua virtual_pet.lua
 
 Vaesktöng is a conlang I created for fun and worldbuilding. It adds a unique, mystical flavor to the game’s atmosphere.
 
-Phrase  Pronunciation  Meaning
+The game now even lets you **play in Vaesktöng**: choose the language when you start, and many of the prompts use conlang wording. Additionally, each turn has a chance of spitting out a random Vaesktöng phrase along with its meaning, so you can slowly pick up the language as you care for your pet.
 
-Und I vaelta?  und ee vay-tah?  Where did it go?
-Das verger rog.  das ver-geh roch  Now it’s gone.
-Peguni vet stör?  peh-goo-nee veht shtur?  Did you notice?
-Noka draem tu noth?  no-kah draym too noth  Has the silence gone or been replaced?
+Sample phrases you'll encounter in‑game:
+
+| Phrase              | Pronunciation           | Meaning                                |
+| ------------------- | ----------------------- | -------------------------------------- |
+| Und I vaelta?       | und ee vay-tah?         | Where did it go?                       |
+| Das verger rog.     | das ver-geh roch        | Now it’s gone.                         |
+| Peguni vet stör?    | peh-goo-nee veht shtur? | Did you notice?                        |
+| Noka draem tu noth? | no-kah draym too noth   | Has the silence gone or been replaced? |
 
 ---
 
