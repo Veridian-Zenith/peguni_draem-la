@@ -50,7 +50,7 @@ git clone git@github.com:Veridian-Zenith/peguni_draem-la.git
 cd peguni_draem-la
 lua virtual_pet.lua
 
-# when prompted for language, choose '6' to play in Vaesktöng;
+# when prompted for language, choose '1' to play in Vaesktöng;
 # the game will sprinkle conlang phrases as you go!
 ```
 
